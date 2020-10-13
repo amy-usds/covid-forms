@@ -4259,85 +4259,114 @@
 
 
               <fieldset class="usa-fieldset padding-bottom-8" id="gender-identity">
-                      <legend class="usa-legend">What is your gender identity?</legend>
+                      <legend class="usa-legend">What is your gender?</legend>
+                      <span class="usa-hint" id="gender-helper-text">We ask for this information to help us understand how COVID-19 is impacting people of all genders. Please check all that apply.</span>
                       <br/>
                       <div class="grid-row grid-gap">
-                          <div class="usa-radio tablet:grid-col-6">
-                            <input class="usa-radio__input" id="gender-identity-woman" type="radio" name="gender" value="gender-identity-woman">
-                            <label class="usa-radio__label" for="gender-identity-woman">Woman</label>
+                          <div class="usa-checkbox tablet:grid-col-9">
+                            <input class="usa-checkbox__input" id="gender-identity-woman" type="checkbox" name="gender" value="gender-identity-woman">
+                            <label class="usa-checkbox__label" for="gender-identity-woman">Woman</label>
                           </div>
-                          <div class="usa-radio tablet:grid-col-6">
-                            <input class="usa-radio__input" id="gender-identity-man" type="radio" name="gender" value="gender-identity-man">
-                            <label class="usa-radio__label" for="gender-identity-man">Man</label>
+                          <div class="usa-checkbox tablet:grid-col-9">
+                            <input class="usa-radio__input" id="gender-identity-man" type="checkbox" name="gender" value="gender-identity-man">
+                            <label class="usa-checkbox__label" for="gender-identity-man">Man</label>
                           </div>
-                           <div class="usa-radio tablet:grid-col-6">
-                            <input class="usa-radio__input" id="gender-identity-cisgender" type="radio" name="gender" value="gender-identity-cisgender">
-                            <label class="usa-radio__label" for="gender-identity-cisgender">Cisgender</label>
+                           <div class="usa-checkbox tablet:grid-col-9">
+                            <input class="usa-checkbox__input" id="gender-identity-cisgender" type="checkbox" name="gender" value="gender-identity-cisgender">
+                            <label class="usa-checkbox__label" for="gender-identity-cisgender">Cisgender</label>
                           </div>
-                          <div class="usa-radio tablet:grid-col-6">
-                            <input class="usa-radio__input" id="gender-identity-non-binary" type="radio" name="gender" value="gender-identity-non-binary">
-                            <label class="usa-radio__label" for="gender-identity-transgender">Non-Binary</label>
+                          <div class="usa-checkbox tablet:grid-col-9">
+                            <input class="usa-checkbox__input" id="gender-identity-intersex" type="checkbox" name="gender" value="gender-identity-intersex">
+                            <label class="usa-checkbox__label" for="gender-identity-intersex">Intersex</label>
+                          </div>                        
+                            <div class="usa-checkbox tablet:grid-col-9">
+                            <input class="usa-checkbox__input" id="gender-identity-non-binary" type="checkbox" name="gender" value="gender-identity-non-binary">
+                            <label class="usa-checkbox__label" for="gender-identity-non-binary">Nonbinary/Genderqueer</label>
                           </div>
-                          <div class="usa-radio tablet:grid-col-6">
-                            <input class="usa-radio__input" id="gender-identity-transgender" type="radio" name="gender" value="gender-identity-transgender">
-                            <label class="usa-radio__label" for="gender-identity-transgender">Transgender</label>
+                          <div class="usa-checkbox tablet:grid-col-9">
+                            <input class="usa-checkbox__input" id="gender-identity-transgender" type="checkbox" name="gender" value="gender-identity-transgender">
+                            <label class="usa-checkbox__label" for="gender-identity-transgender">Transgender</label>
                           </div>
-                          <div class="usa-radio tablet:grid-col-6">
-                            <input class="usa-radio__input" id="gender-identity-not-listed" type="radio" name="gender" value="gender-identity-not-listed">
-                            <label class="usa-radio__label" for="gender-identity-not-listed">Not listed</label>
+                          <div class="usa-checkbox tablet:grid-col-9">
+                            <input class="usa-checkbox__input" id="gender-identity-two-spirit" type="checkbox" name="gender" value="gender-identity-two-spirit">
+                            <label class="usa-checkbox__label" for="gender-identity-two-spirit">Two-spirit</label>
                           </div>
-                          <div class="usa-radio tablet:grid-col-6">
-                            <input class="usa-radio__input" id="gender-choose-not-to-disclose" type="radio" name="gender" value="gender-choose-not-to-disclose">
-                            <label class="usa-radio__label" for="gender-choose-not-to-disclose">Choose not to disclose</label>
+
+                          <div class="usa-checkbox tablet:grid-col-9">
+                            <input class="usa-checkbox__input" id="gender-identity-not-listed" type="checkbox" name="gender" value="gender-identity-not-listed">
+                            <label class="usa-checkbox__label" for="gender-identity-not-listed">Not listed</label>
+                          </div>                        
+                          <div class="usa-checkbox tablet:grid-col-9">
+                            <input class="usa-checkbox__input" id="gender-identity-self-describe" type="checkbox" name="gender" value="gender-identity-self-describe">
+                            <label class="usa-checkbox__label" for="gender-identity-self-describe">Prefer to self-describe</label>
                           </div>
-                          <div class="usa-checkbox tablet:grid-col-9 other-question is-hidden" id="gender-other-question">
-                            <label class="usa-label" for="gender-other">How do you describe your gender?</label>
-                            <input class="usa-input" id="gender-other" name="gender-other" type="text" required aria-required="false">
+                          <div class="usa-checkbox tablet:grid-col-9">
+                            <input class="usa-checkbox__input" id="gender-identity-prefer-not-to-answer" type="checkbox" name="gender" value="gender-identity-prefer-not-to-answer">
+                            <label class="usa-checkbox__label" for="gender-identify-prefer-not-to-answer">Prefer not to answer</label>
+                          </div>
+                          <div class="usa-checkbox tablet:grid-col-9 self-describe-question is-hidden" id="gender-self-describe-question">
+                            <label class="usa-label" for="self-describe-question">How do you describe your gender?</label>
+                            <input class="usa-input" id="self-describe-question" name="self-describe-question" type="text" required aria-required="false">
                           </div>
                       </div>
                 </fieldset>
 
                   <fieldset class="usa-fieldset padding-bottom-6" id="sexual-orientation">
                           <legend class="usa-legend">What is your sexual orientation?</legend>
+                          <span class="usa-hint" id="orientation-helper-text">We ask for this information to help us understand how COVID-19 is impacting people of all sexual orientations. Please check all that apply.</span>
                           <br/>
                           <div class="grid-row grid-gap">
-
-                              <div class="usa-radio tablet:grid-col-6">
-                                <input class="usa-radio__input" id="straight" type="radio" name="sexual-orientation" value="straight">
-                                <label class="usa-radio__label" for="straight">Straight (not Lesbian or Gay)</label>
+                              <div class="usa-checkbox tablet:grid-col-9">
+                                <input class="usa-checkbox__input" id="asexual" type="checkbox" name="sexual-orientation" value="asexual">
+                                <label class="usa-checkbox__label" for="asexual">Asexual</label>
                               </div>
-
-                              <div class="usa-radio tablet:grid-col-6">
-                                <input class="usa-radio__input" id="lesbian-or-gay" type="radio" name="sexual-orientation" value="lesbian-or-gay">
-                                <label class="usa-radio__label" for="lesbian-or-gay">Lesbian, Gay</label>
+                              <div class="usa-checkbox tablet:grid-col-9">
+                                <input class="usa-checkbox__input" id="bisexual" type="checkbox" name="sexual-orientation" value="bisexual">
+                                <label class="usa-checkbox__label" for="bisexual">Bisexual</label>
                               </div>
-                              <div class="usa-radio tablet:grid-col-6">
-                                <input class="usa-radio__input" id="queer" type="radio" name="sexual-orientation" value="queer">
-                                <label class="usa-radio__label" for="queer">Queer</label>
+                              <div class="usa-checkbox tablet:grid-col-9">
+                                <input class="usa-checkbox__input" id="gay" type="checkbox" name="sexual-orientation" value="gay">
+                                <label class="usa-checkbox__label" for="gay">Gay</label>
                               </div>
-                              <div class="usa-radio tablet:grid-col-6">
-                                <input class="usa-radio__input" id="bisexual" type="radio" name="sexual-orientation" value="bisexual">
-                                <label class="usa-radio__label" for="bisexual">Bisexual</label>
+                              <div class="usa-checkbox tablet:grid-col-9">
+                                <input class="usa-checkbox__input" id="homosexual" type="checkbox" name="sexual-orientation" value="homosexual">
+                                <label class="usa-checkbox__label" for="homosexual">Homosexual</label>
                               </div>
-                              <div class="usa-radio tablet:grid-col-6">
-                                <input class="usa-radio__input" id="asexual" type="radio" name="sexual-orientation" value="asexual">
-                                <label class="usa-radio__label" for="asexual">Asexual</label>
+                              <div class="usa-checkbox tablet:grid-col-9">
+                                <input class="usa-checkbox__input" id="lesbian" type="checkbox" name="sexual-orientation" value="lesbian">
+                                <label class="usa-checkbox__label" for="lesbian">Lesbian</label>
                               </div>
-                              <div class="usa-radio tablet:grid-col-6">
-                                <input class="usa-radio__input" id="so-not-listed" type="radio" name="sexual-orientation" value="so-not-listed">
-                                <label class="usa-radio__label" for="so-not-listed">Not listed</label>
+                              <div class="usa-checkbox tablet:grid-col-9">
+                                <input class="usa-checkbox__input" id="pansexual" type="checkbox" name="sexual-orientation" value="pansexual">
+                                <label class="usa-checkbox__label" for="pansexual">Pansexual</label>
+                              </div>                             
+                              <div class="usa-checkbox tablet:grid-col-9">
+                                <input class="usa-checkbox__input" id="queer" type="checkbox" name="sexual-orientation" value="queer">
+                                <label class="usa-checkbox__label" for="queer">Queer</label>
+                              </div>                            
+                              <div class="usa-checkbox tablet:grid-col-9">
+                                <input class="usa-checkbox__input" id="straight" type="checkbox" name="sexual-orientation" value="straight">
+                                <label class="usa-checkbox__label" for="straight">Straight/heterosexual</label>
                               </div>
-                              <div class="usa-radio tablet:grid-col-6">
-                                <input class="usa-radio__input" id="so-dont-know" type="radio" name="sexual-orientation" value="so-dont-know">
-                                <label class="usa-radio__label" for="so-dont-know">Don’t know</label>
+                              <div class="usa-checkbox tablet:grid-col-9">
+                                <input class="usa-checkbox__input" id="so-not-listed" type="checkbox" name="sexual-orientation" value="so-not-listed">
+                                <label class="usa-checkbox__label" for="so-not-listed">Not listed</label>
                               </div>
-                              <div class="usa-radio tablet:grid-col-6">
-                                <input class="usa-radio__input" id="so-choose-not-to-disclose" type="radio" name="sexual-orientation" value="so-choose-not-to-disclose">
-                                <label class="usa-radio__label" for="so-choose-not-to-disclose">Choose not to disclose</label>
+                              <div class="usa-checkbox tablet:grid-col-9">
+                                <input class="usa-checkbox__input" id="so-not-sure" type="checkbox" name="sexual-orientation" value="so-not-sure">
+                                <label class="usa-checkbox__label" for="so-not-sure">Not sure/questioning</label>
                               </div>
-                              <div class="usa-checkbox tablet:grid-col-9 margin-bottom-2 other-question is-hidden" id="so-other-question">
-                                <label class="usa-label" for="so-other">How do you describe your sexual orientation?</label>
-                                <input class="usa-input" id="so-other" name="so-other" type="text" required aria-required="false">
+                              <div class="usa-checkbox tablet:grid-col-9">
+                                <input class="usa-checkbox__input" id="sexual-orientation-prefer-to-self-describe" type="checkbox" name="gender" value="sexual-orientation-prefer-to-self-describe">
+                                <label class="usa-checkbox__label" for="sexual-orientation-prefer-to-self-describe">Prefer to self-describe</label>
+                              </div> 
+                              <div class="usa-checkbox tablet:grid-col-9">
+                                <input class="usa-checkbox__input" id="gender-identity-prefer-not-to-answer" type="checkbox" name="gender" value="gender-identity-prefer-not-to-answer">
+                                <label class="usa-checkbox__label" for="gender-identify-prefer-not-to-answer">Prefer not to answer</label>
+                              </div>
+                              <div class="usa-checkbox tablet:grid-col-9 margin-bottom-2 self-describe-question is-hidden" id="so-self-describe-question">
+                                <label class="usa-label" for="so-self-describe-question">How do you describe your sexual orientation?</label>
+                                <input class="usa-input" id="so-self-describe-question" name="so-other" type="text" required aria-required="false">
                               </div>
                         </div>
 
